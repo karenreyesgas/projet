@@ -1,0 +1,45 @@
+<html>
+<head>
+<meta charset='utf-8'>
+<style>
+  #mld .relation { font-variant: small-caps; font-weight: bold }
+  #mld .primary { text-decoration: underline }
+  #mld .foreign { font-style: oblique }
+  #mld .normal { }
+</style>
+</head>
+<body>
+<div id='mld'>
+<div>
+  <span class='relation'>USER</span> (
+    <span class='primary'>idutilisateur</span>,
+    <span class='normal'>pseudo</span>,
+    <span class='normal'>name</span>,
+    <span class='normal'>lastName</span>,
+    <span class='normal'>age</span>,
+    <span class='normal'>password</span>
+  )
+</div>
+<div>
+  <span class='relation'>ROUTE</span> (
+    <span class='foreign primary'>idutilisateur</span>,
+    <span class='primary'>idroute</span>,
+    <span class='normal'>dateroute</span>,
+    <span class='normal'>debutroute</span>,
+    <span class='normal'>finroute</span>
+  )
+</div>
+<div>
+  <span class='relation'>INFOROUTE</span> (
+    <span class='foreign primary'>idutilisateur</span>,
+    <span class='foreign primary'>idroute</span>,
+    <span class='primary'>idInfo</span>,
+    <span class='normal'>speed</span>,
+    <span class='normal'>duration</span>,
+    <span class='normal'>cardio</span>,
+    <span class='normal'>dateInfo</span>
+  )
+</div>
+</div>
+</body>
+</html>

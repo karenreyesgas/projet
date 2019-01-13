@@ -1,0 +1,7 @@
+
+USER: idutilisateur, pseudo, name, lastName, age, password 
+FAIT, 1N USER, _11 ROUTE
+ROUTE: idroute, dateroute, debutroute, finroute
+A, _11 INFOROUTE, 1N ROUTE
+INFOROUTE: idInfo, speed, duration, cardio, dateInfo
+
